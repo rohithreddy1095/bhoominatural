@@ -1,0 +1,313 @@
+{
+  "generated": "2026-01-16T21:50:04.461322",
+  "stats": {
+    "total_videos": 46,
+    "total_views": 382592,
+    "unique_plants": [
+      "Avocado",
+      "Banana",
+      "Chiku",
+      "Coconut",
+      "Ginger",
+      "Guava",
+      "Jackfruit",
+      "Jamun",
+      "Litchi",
+      "Mango",
+      "Papaya",
+      "Pomegranate",
+      "Turmeric",
+      "\u0906\u092e",
+      "\u0915\u0947\u0932\u093e"
+    ],
+    "categories_count": {
+      "Transformation": 8,
+      "Tutorial": 5,
+      "Farm Tour": 6,
+      "Harvest": 3,
+      "General": 23
+    }
+  },
+  "categories": {
+    "Transformation": [
+      {
+        "id": "2T8wScLZZ8Y",
+        "title": "Food Forest & Avacado Journey in Mumbai : 1 year transformation by Bhoomi Natural",
+        "url": "https://www.youtube.com/watch?v=2T8wScLZZ8Y",
+        "views": 2219
+      },
+      {
+        "id": "TamDB0LDcRY",
+        "title": "Pond & Food Forest Transformation from Waste Land in Kolkata by Bhoomi Natural | Vegetable Garden",
+        "url": "https://www.youtube.com/watch?v=TamDB0LDcRY",
+        "views": 2550
+      },
+      {
+        "id": "tTh-3_85sVk",
+        "title": "10 Month Food forest Growth | 10 \u092e\u0939\u0940\u0928\u0947 \u092e\u0947\u0902 \u092b\u0932 \u0932\u0917 \u0917\u090f | Bhoomi Natural | Abhay Rod",
+        "url": "https://www.youtube.com/watch?v=tTh-3_85sVk",
+        "views": 3196
+      },
+      {
+        "id": "J0C4-RVGMwU",
+        "title": "Food Forest Growth of 8 Month with 50+ Fruits & Vegetables | \u092b\u0932\u094b \u0915\u093e \u091c\u0902\u0917\u0932 \u0926\u0947\u0916\u093f\u090f \u0964Bhoomi Natural Noida",
+        "url": "https://www.youtube.com/watch?v=J0C4-RVGMwU",
+        "views": 4701
+      },
+      {
+        "id": "qsEDrFyT_2Y",
+        "title": "4 \u092e\u0939\u0940\u0928\u0947 \u0915\u093e \u092b\u093c\u0942\u0921 \u092b\u093e\u0930\u0947\u0938\u094d\u091f \u0964 4 Months old Food Forest | Mumbai | #foodforest #fruit #permaculture",
+        "url": "https://www.youtube.com/watch?v=qsEDrFyT_2Y",
+        "views": 3240
+      },
+      {
+        "id": "iYShuEswbtc",
+        "title": "Gladiolus \u092b\u0942\u0932 \u0915\u0940 4 \u092e\u0939\u0940\u0928\u0947 \u092e\u0947\u0902 \u092c\u093f\u0915\u094d\u0930\u0940 \u0936\u0941\u0930\u0942 \u0939\u094b \u0917\u0908 \u0964 How to Harvest & Pack Gladiolus Flower in 4 Months?",
+        "url": "https://www.youtube.com/watch?v=iYShuEswbtc",
+        "views": 1889
+      },
+      {
+        "id": "FK8w5Sqj-0Y",
+        "title": "In 4 Months FRUITING start in FOOD FOREST | 4 \u092e\u0939\u0940\u0928\u0947 \u092e\u0947\u0902 \u0939\u0940 \u092a\u0947\u0921\u093c \u092a\u0930 \u092b\u0932 \u0906\u0928\u0947 \u0932\u0917\u093e | Bhoomi Natural Farm",
+        "url": "https://www.youtube.com/watch?v=FK8w5Sqj-0Y",
+        "views": 2514
+      },
+      {
+        "id": "T2gTGwigaxk",
+        "title": "Growth of Bhoomi natural Farm food forest in 6 months.          #bhoominatural #bhoomi",
+        "url": "https://www.youtube.com/watch?v=T2gTGwigaxk",
+        "views": 3458
+      }
+    ],
+    "Tutorial": [
+      {
+        "id": "eZineGlZ7Q4",
+        "title": "\u0906\u092e \u0915\u0940 \u0928\u0908 \u0915\u093c\u093f\u0938\u094d\u092e \u0915\u0940 \u0916\u094b\u091c\u093c \u0964 Magic : How we grow new variety ? Food Forest\ud83c\udf33 Bhoomi Natural Farm | Abhay",
+        "url": "https://www.youtube.com/watch?v=eZineGlZ7Q4",
+        "views": 973
+      },
+      {
+        "id": "q-r4b4rKOVY",
+        "title": "How we grow Victoria Queen : World\u2019s best Pineapple?\u0905\u0928\u093e\u0928\u093e\u0938 \u0915\u0940 \u0916\u0947\u0924\u0940 \u0914\u0930 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0932\u093e\u092d Health Benefits",
+        "url": "https://www.youtube.com/watch?v=q-r4b4rKOVY",
+        "views": 1938
+      },
+      {
+        "id": "mKh11c9TJGo",
+        "title": "How to grow mango tree from mother plant ?Technique of grafting to develop mango tree Bhoomi Natural",
+        "url": "https://www.youtube.com/watch?v=mKh11c9TJGo",
+        "views": 853
+      },
+      {
+        "id": "MPIbKZEP7e4",
+        "title": "How to plant PINEAPPLE Saplings from Manipur and Maharashtra in food forest of Bhoomi Natural",
+        "url": "https://www.youtube.com/watch?v=MPIbKZEP7e4",
+        "views": 2912
+      },
+      {
+        "id": "5L_glAkenzA",
+        "title": "How we convert mango orchard into food forest Bhoomi Natural \u0906\u092e \u0915\u0947 \u092c\u0917\u0940\u091a\u0947 \u0915\u094b \u095e\u0942\u0921 \u092b\u0949\u0930\u0947\u0938\u094d\u091f \u092e\u0947 \u0915\u0948\u0938\u0947 \u092c\u0926\u0932\u093e",
+        "url": "https://www.youtube.com/watch?v=5L_glAkenzA",
+        "views": 16557
+      }
+    ],
+    "Farm Tour": [
+      {
+        "id": "0HiWgZ7FwB8",
+        "title": "Mumbai hillside FOOD FOREST : A Tour of 9 month old Sustainable Growth | Bhoomi Natural | Mumbai",
+        "url": "https://www.youtube.com/watch?v=0HiWgZ7FwB8",
+        "views": 3971
+      },
+      {
+        "id": "jzvwDsn-H68",
+        "title": "Bhoomi Food Forest FRUITS Tour | \u092b\u0932 \u0939\u0940 \u092b\u0932 \u0932\u0917\u0947 \u0939\u0948  \u0964 NoTill Food Forest",
+        "url": "https://www.youtube.com/watch?v=jzvwDsn-H68",
+        "views": 7102
+      },
+      {
+        "id": "SlDb256ENuM",
+        "title": "10 Acre FOOD FOREST Tour | \u092b\u0932\u094b\u0902 \u0915\u093e \u091c\u0902\u0917\u0932 \u0918\u0942\u092e\u093f\u092f\u0947 \u0964 Bhoomi Natural Farms | Bekeeping | Fruits | Flowers",
+        "url": "https://www.youtube.com/watch?v=SlDb256ENuM",
+        "views": 46656
+      },
+      {
+        "id": "55O8SRNYYP4",
+        "title": "Gold Harvesting : Turmeric from food forest | FARM TOUR | \u092b\u0932\u094b \u0915\u0947 \u0938\u093e\u0925 \u0939\u0932\u094d\u0926\u0940 \u092b\u094d\u0930\u0940 \u092e\u0947\u0902 \u0909\u0917\u0924\u0940 \u0939\u0948 | BHOOMI",
+        "url": "https://www.youtube.com/watch?v=55O8SRNYYP4",
+        "views": 9441
+      },
+      {
+        "id": "NzCpAtIg090",
+        "title": "\"Farm Tour of Multilayer Sustainable Food Forest\u201d |\u092b\u0932\u094b \u0915\u093e \u091c\u0902\u0917\u0932 \u0926\u0947\u0916\u093f\u090f\u0964 35+Fruits,Turmeric \u0964 Abhay Rod",
+        "url": "https://www.youtube.com/watch?v=NzCpAtIg090",
+        "views": 5696
+      },
+      {
+        "id": "MJ0uoV7lURs",
+        "title": "10 ACRE Multilayer Sustainable Food Forest Tour | \u092b\u0932\u094b \u0915\u0947 \u091c\u0902\u0917\u0932 \u0915\u0940 \u0938\u0948\u0930  | Bhoomi Natural | Abhay Rod",
+        "url": "https://www.youtube.com/watch?v=MJ0uoV7lURs",
+        "views": 160570
+      }
+    ],
+    "Harvest": [
+      {
+        "id": "Ym00HMUECU0",
+        "title": "Gladiolus Flower Harvesting to Packaging : \u0917\u094d\u0932\u0947\u0921\u093f\u092f\u094b\u0932\u0938 \u092b\u0942\u0932 \u0915\u0940 \u0915\u091f\u093e\u0908 \u0938\u0947 \u092a\u0948\u0915\u093f\u0902\u0917 \u0924\u0915 | Bhoomi Natural |",
+        "url": "https://www.youtube.com/watch?v=Ym00HMUECU0",
+        "views": 1492
+      },
+      {
+        "id": "uJmqCk1fC4c",
+        "title": "Why and how to pruning AVACADO Plant ? \u0905\u0935\u093e\u0915\u093e\u0921\u094b \u0915\u0940 \u0915\u091f\u093e\u0908 \u0915\u094d\u092f\u094b\u0902 \u0914\u0930 \u0915\u0948\u0938\u0947 \u0915\u0930\u0947 ? Bhoomi Natural Foodforest",
+        "url": "https://www.youtube.com/watch?v=uJmqCk1fC4c",
+        "views": 940
+      },
+      {
+        "id": "mqo-_RxTBqg",
+        "title": "Why & How of COMPOSTING & PRUNING after Harvesting Fruit | GhanJivaamrit, Jivaamrit | Hindi | Bhoomi",
+        "url": "https://www.youtube.com/watch?v=mqo-_RxTBqg",
+        "views": 4269
+      }
+    ],
+    "General": [
+      {
+        "id": "Lvgc7xfgH7M",
+        "title": "\u0915\u0948\u0938\u0947 \u0928\u092f\u093e \u092b\u093c\u0942\u0921 \u092b\u093e\u0930\u0947\u0938\u094d\u091f \u0926\u093f\u0932\u094d\u0932\u0940 \u092e\u0947\u0902 \u0932\u0917\u093e\u092f\u093e | FOOD FOREST Project in Delhi : Growing Sustainable Future \ud83c\udf33",
+        "url": "https://www.youtube.com/watch?v=Lvgc7xfgH7M",
+        "views": 1806
+      },
+      {
+        "id": "kGZLqLhsPb8",
+        "title": "\u092b\u0932\u094b \u0915\u0947 \u092a\u0947\u0921\u093c \u092a\u0930 \u092b\u0942\u0932 ! Food Forest : Flowers blooming on Pear Plum Litchi Peach Mango in Bhoominatural",
+        "url": "https://www.youtube.com/watch?v=kGZLqLhsPb8",
+        "views": 1410
+      },
+      {
+        "id": "9puTDbfxf1k",
+        "title": "Gladiolus Flower Farming in Food Forest | \u0917\u094d\u0932\u0947\u0921\u093f\u092f\u094b\u0932\u0938 \u092b\u0942\u0932 \u0915\u0940 \u0916\u0947\u0924\u0940 \u0915\u0948\u0938\u0947 \u0915\u0930\u0947 \u092b\u093c\u0942\u0921 \u092b\u093e\u0930\u0947\u0938\u094d\u091f \u092e\u0947\u0902 | bhoomi",
+        "url": "https://www.youtube.com/watch?v=9puTDbfxf1k",
+        "views": 1385
+      },
+      {
+        "id": "2g98gT-Ofk4",
+        "title": "Companion Planting : Avacado new variety and Papaya \u0905\u0935\u093e\u0915\u093e\u0921\u094b \u0914\u0930 \u092a\u092a\u0940\u0924\u093e \u0915\u0947 \u0916\u0947\u0924\u0940 \u090f\u0915 \u0938\u093e\u0925 | Mumbai farming",
+        "url": "https://www.youtube.com/watch?v=2g98gT-Ofk4",
+        "views": 1722
+      },
+      {
+        "id": "Yu-YjuPwpRQ",
+        "title": "Mumbai hillside FOOD FOREST: A journey from scratch to sustainability| \u092e\u0941\u0902\u092c\u0908 \u092e\u0947\u0902 \u092b\u093c\u0942\u0921 \u092b\u093e\u0930\u0947\u0938\u094d\u091f bhoomi",
+        "url": "https://www.youtube.com/watch?v=Yu-YjuPwpRQ",
+        "views": 6945
+      },
+      {
+        "id": "urxUmP8vIL0",
+        "title": "\u201cMANGO\u201d - Chemical free & Pesticide free growing techniques | \u201c\u0906\u092e\u201d \u0915\u0940 \u091c\u0939\u0930\u092e\u0941\u0915\u094d\u0924 \u092b\u0938\u0932 | Bhoomi Natural",
+        "url": "https://www.youtube.com/watch?v=urxUmP8vIL0",
+        "views": 1743
+      },
+      {
+        "id": "K1ykUIqXdK8",
+        "title": "First Step to Starting your FOOD FOREST |Mumbai | Konkan Western Ghats| Bhoomi Natural |Permaculture",
+        "url": "https://www.youtube.com/watch?v=K1ykUIqXdK8",
+        "views": 3291
+      },
+      {
+        "id": "A1xdFVXB1Ck",
+        "title": "Grow Pineapple Plant from Fruit | \u0905\u0928\u093e\u0928\u093e\u0938 \u0915\u094b \u092a\u0947\u0921\u093c \u0915\u0948\u0938\u0947 7 \u0926\u093f\u0928 \u092e\u0947\u0902 \u0924\u0948\u092f\u093e\u0930 \u0915\u0930\u0947 \u092b\u0932 \u0938\u0947 | Bhoomi Natural",
+        "url": "https://www.youtube.com/watch?v=A1xdFVXB1Ck",
+        "views": 904
+      },
+      {
+        "id": "u1TxZ25o1zo",
+        "title": "\u0915\u0948\u0938\u0947 \u0916\u093e\u0926 \u0914\u0930 \u092a\u093e\u0928\u0940 \u092c\u091a\u093e\u092f\u093e ? LOW COST Natural fertilizer and irrigation techniques jeevamrit gokripamrit",
+        "url": "https://www.youtube.com/watch?v=u1TxZ25o1zo",
+        "views": 8603
+      },
+      {
+        "id": "HaNKyC64b00",
+        "title": "Excellent Growth of 60 Days old 2Acre Food Forest\u0964 60 \u0926\u093f\u0928 \u092e\u0947\u0902 \u092b\u093c\u0942\u0921 \u092b\u093e\u0930\u0947\u0938\u094d\u091f \u0915\u0948\u0938\u0947 \u0907\u0924\u0928\u093e \u0905\u091a\u094d\u091b\u093e \u092c\u0928\u093e\u092f\u093e ? \ud83c\udf33",
+        "url": "https://www.youtube.com/watch?v=HaNKyC64b00",
+        "views": 2942
+      },
+      {
+        "id": "eLeLTZRAUW8",
+        "title": "Rajnigandha or Tuberose Flower Farming In Multilayer Food Forest \u0964 \u0930\u091c\u0928\u0940\u0917\u0902\u0927\u093e \u0915\u094b \u092b\u0932\u094b \u0915\u0947 \u091c\u0902\u0917\u0932 \u092e\u0947\u0902 \u0909\u0917\u093e\u092f\u093e",
+        "url": "https://www.youtube.com/watch?v=eLeLTZRAUW8",
+        "views": 4484
+      },
+      {
+        "id": "2iIMIY-fCAU",
+        "title": "Earthworm (\u0915\u0947\u091a\u0942\u0906) works FREE in FOOD FOREST provide Nutrition & Water | \u0915\u093f\u0938\u093e\u0928 \u0915\u093e \u0938\u091a\u094d\u091a\u093e \u092e\u093f\u0924\u094d\u0930",
+        "url": "https://www.youtube.com/watch?v=2iIMIY-fCAU",
+        "views": 3127
+      },
+      {
+        "id": "e0-RDspstcc",
+        "title": "2 Acre farm land transform into Food Forest | \u092b\u0932\u094b \u0915\u0947 \u091c\u0902\u0917\u0932 \u092e\u0947\u0902 2 \u090f\u0915\u0921 \u0916\u0947\u0924\u0940 \u0915\u094b \u092c\u0926\u0932\u093e  | Bhoomi Natural",
+        "url": "https://www.youtube.com/watch?v=e0-RDspstcc",
+        "views": 7565
+      },
+      {
+        "id": "I5w7DuGiA5M",
+        "title": "Convert Mango orchard into MULTILAYER food forest|\u0906\u092e \u0915\u0947 \u092c\u0917\u0940\u091a\u0947 \u0915\u094b \u092b\u0932\u094b \u0915\u0947 \u091c\u0902\u0917\u0932 \u092e\u0947\u0902 \u092c\u0926\u0932\u093e|BHOOMI NATURAL",
+        "url": "https://www.youtube.com/watch?v=I5w7DuGiA5M",
+        "views": 19333
+      },
+      {
+        "id": "y-N7gBe0Nvw",
+        "title": "Sustainable Food System\u0964CBSE Initiative\u0964school student\u0964Environment,soil,water,Air pollution\u0964AbhayRod",
+        "url": "https://www.youtube.com/watch?v=y-N7gBe0Nvw",
+        "views": 1781
+      },
+      {
+        "id": "l2nmiYGJdYI",
+        "title": "BUMPER production of LYCHEE | \u0917\u093c\u091c\u093c\u092c \u0938\u094d\u0935\u093e\u0926 \u0932\u0940\u091a\u0940  | LITCHI NATURAL farming | BHOOMI NATURAL | HINDI",
+        "url": "https://www.youtube.com/watch?v=l2nmiYGJdYI",
+        "views": 3289
+      },
+      {
+        "id": "ro6JMxacScY",
+        "title": "Elaichi Banana in Bhoomi Natural Food Forest | \u0907\u0932\u093e\u0907\u091a\u0940 \u0915\u0947\u0932\u0947 \u0915\u093e \u0909\u0924\u094d\u0924\u0930 \u092d\u093e\u0930\u0924 \u092a\u0947\u0926\u093e\u0935\u093e\u0930 #foodforest",
+        "url": "https://www.youtube.com/watch?v=ro6JMxacScY",
+        "views": 2235
+      },
+      {
+        "id": "XFVBwt5TD24",
+        "title": "\u0932\u0940\u091a\u0940 \u0915\u0940 \u092b\u094d\u0932\u093e\u0935\u0930\u093f\u0902\u0917 \u0914\u0930 \u092b\u094d\u0930\u0942\u091f\u093f\u0902\u0917 \u200bBhoomi Natural Food forest \u092e\u0947\u0902 \u0914\u0930 \u092d\u0940 15 \u092b\u0932\u094b \u0915\u0940 \u092b\u094d\u0930\u0942\u091f\u093f\u0902\u0917 \u091a\u0932 \u0930\u0939\u0940 Litchi",
+        "url": "https://www.youtube.com/watch?v=XFVBwt5TD24",
+        "views": 2441
+      },
+      {
+        "id": "7LTft6KNXb4",
+        "title": "Black Rice and 3 other variety of desi rice are growing naturally in bhoomi natural farm | \u0915\u0932\u093e \u091a\u093e\u0935\u0932",
+        "url": "https://www.youtube.com/watch?v=7LTft6KNXb4",
+        "views": 855
+      },
+      {
+        "id": "EMCcBPoS7Y0",
+        "title": "Bhoomi Natural Farm at FRI (Forest Research Institute) dehradun \u092d\u0942\u092e\u093f \u0928\u0947\u091a\u0941\u0930\u0932 \u0906\u092f\u093e \u0935\u0928 \u0905\u0928\u0941\u0938\u0902\u0927\u093e\u0928 \u0938\u0902\u0938\u094d\u0925\u093e\u0928\ud83c\udf33",
+        "url": "https://www.youtube.com/watch?v=EMCcBPoS7Y0",
+        "views": 1050
+      },
+      {
+        "id": "HJJyLHcO4Mc",
+        "title": "Why only 10% of the bees left in food forest?\u0939\u092e\u093e\u0930\u0947 \u0916\u0947\u0924 \u092e\u0947\u0902 \u0915\u094d\u092f\u094b\u0902 \u092c\u091a\u0940 \u0938\u093f\u0930\u094d\u092b 10% \u092e\u0927\u0941\u092e\u0915\u094d\u0916\u0940 #bee #bees",
+        "url": "https://www.youtube.com/watch?v=HJJyLHcO4Mc",
+        "views": 1988
+      },
+      {
+        "id": "YLoJ9vZDRZM",
+        "title": "No till food forest of Bhoomi natural farm \u092c\u093f\u0928\u093e \u091c\u0941\u0924\u093e\u0908 \u0915\u093e \u092b\u0932\u094b \u0915\u0947 \u091c\u0902\u0917\u0932 \u0915\u0940 \u0938\u0948\u0930 mango papaya grafting",
+        "url": "https://www.youtube.com/watch?v=YLoJ9vZDRZM",
+        "views": 14790
+      },
+      {
+        "id": "56ZmlJsNRR8",
+        "title": "Magic of seed to develop a new mango variety in the food forest of @bhoominatural Farm  Abhay Rod",
+        "url": "https://www.youtube.com/watch?v=56ZmlJsNRR8",
+        "views": 1766
+      }
+    ]
+  }
+}
