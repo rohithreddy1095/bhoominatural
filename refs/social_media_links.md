@@ -13,17 +13,18 @@
 ### YouTube
 - **URL**: https://www.youtube.com/@bhoominatural
 - **Handle**: @bhoominatural
-- **Statistics**:
+- **Statistics** (as of initial data collection):
   - Joined: June 22, 2021
   - Subscribers: 8.2K
   - Videos: 106
   - Total Views: 727,149
+  - *Note: Statistics are subject to change; verify current numbers on the channel*
 
 ## Additional Information
 
 - **Country**: India
 - **Verification**: Phone verified
-- **Email**: View email address (contact through social media platforms)
+- **Contact**: For email and direct contact information, reach out through the social media platforms listed above
 
 ## Notes
 
