@@ -1,0 +1,668 @@
+{
+  "summary": {
+    "total_videos_analyzed": 21,
+    "top_crops": {
+      "Litchi": 14,
+      "Mango": 11,
+      "Flowers": 10,
+      "Peach": 9,
+      "Turmeric": 9,
+      "Pear": 8,
+      "Banana": 8,
+      "Guava": 7,
+      "Tuberose": 6,
+      "Chiku": 5,
+      "Papaya": 5,
+      "Gladiolus": 3,
+      "Jackfruit": 3,
+      "Rice": 2,
+      "Flower": 1,
+      "Pineapple": 1,
+      "Avocado": 1
+    },
+    "top_techniques": {
+      "Food Forest": 21,
+      "Jeevamrit": 13,
+      "Vermicompost": 6,
+      "Grafting": 4,
+      "Multilayer": 3,
+      "Ghanjeevamrit": 2,
+      "Composting": 1,
+      "Harvesting": 1,
+      "Compost": 1
+    },
+    "acreage_mentions": [
+      10.0
+    ],
+    "by_location": {
+      "Main Farm (Shamli)": {
+        "crops": [
+          "Rice",
+          "Avocado",
+          "Flower",
+          "Pineapple",
+          "Mango",
+          "Litchi",
+          "Chiku",
+          "Peach",
+          "Guava",
+          "Tuberose",
+          "Flowers",
+          "Jackfruit",
+          "Gladiolus",
+          "Pear",
+          "Turmeric",
+          "Papaya",
+          "Banana"
+        ],
+        "techniques": [
+          "Vermicompost",
+          "Grafting",
+          "Compost",
+          "Harvesting",
+          "Ghanjeevamrit",
+          "Jeevamrit",
+          "Food Forest",
+          "Composting",
+          "Multilayer"
+        ],
+        "acreages": [
+          10.0
+        ]
+      }
+    }
+  },
+  "videos": [
+    {
+      "video_id": "A1xdFVXB1Ck",
+      "title": "Grow Pineapple Plant from Fruit | अनानास को पेड़ कैसे 7 दिन में तैयार करे फल से | Bhoomi Natural",
+      "location": "Main Farm (Shamli)",
+      "category": "Tutorial",
+      "language": "hi",
+      "text_length": 4940,
+      "extracted": {
+        "crops": [],
+        "techniques": [
+          "Jeevamrit",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          7,
+          15,
+          15,
+          20
+        ]
+      }
+    },
+    {
+      "video_id": "I5w7DuGiA5M",
+      "title": "Convert Mango orchard into multilayer food forest |Bhoomi Natural",
+      "location": "Main Farm (Shamli)",
+      "category": "Farm Tour",
+      "language": "hi",
+      "text_length": 14170,
+      "extracted": {
+        "crops": [
+          "Litchi",
+          "Mango",
+          "Chiku",
+          "Peach",
+          "Pear",
+          "Turmeric",
+          "Banana"
+        ],
+        "techniques": [
+          "Jeevamrit",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          3,
+          4,
+          5,
+          2,
+          2,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "video_id": "Ym00HMUECU0",
+      "title": "Gladiolus Flower Harvesting to Packaging : ग्लेडियोलस फूल की कटाई से पैकिंग तक | Bhoomi Natural |",
+      "location": "Main Farm (Shamli)",
+      "category": "Harvest",
+      "language": "en",
+      "text_length": 824,
+      "extracted": {
+        "crops": [
+          "Flower"
+        ],
+        "techniques": [
+          "Composting",
+          "Harvesting",
+          "Food Forest",
+          "Compost"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": []
+      }
+    },
+    {
+      "video_id": "urxUmP8vIL0",
+      "title": "MANGO - Chemical free & Pesticide free growing techniques | आम की जहरमुक्त फसल | Bhoomi Natural",
+      "location": "Main Farm (Shamli)",
+      "category": "Tutorial",
+      "language": "hi",
+      "text_length": 6480,
+      "extracted": {
+        "crops": [
+          "Litchi",
+          "Mango",
+          "Peach"
+        ],
+        "techniques": [
+          "Jeevamrit",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          40
+        ]
+      }
+    },
+    {
+      "video_id": "kGZLqLhsPb8",
+      "title": "फलो के पेड़ पर फूल ! Food Forest : Flowers blooming on Pear Plum Litchi Peach Mango in Bhoominatural",
+      "location": "Main Farm (Shamli)",
+      "category": "General",
+      "language": "hi",
+      "text_length": 8573,
+      "extracted": {
+        "crops": [
+          "Litchi",
+          "Mango",
+          "Peach",
+          "Flowers",
+          "Gladiolus",
+          "Pear"
+        ],
+        "techniques": [
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          40,
+          50,
+          10,
+          5
+        ]
+      }
+    },
+    {
+      "video_id": "iYShuEswbtc",
+      "title": "Gladiolus फूल की 4 महीने में बिक्री शुरू हो गई । How to Harvest & Pack Gladiolus Flower in 4 Months?",
+      "location": "Main Farm (Shamli)",
+      "category": "Tutorial",
+      "language": "hi",
+      "text_length": 8505,
+      "extracted": {
+        "crops": [
+          "Flowers"
+        ],
+        "techniques": [
+          "Ghanjeevamrit",
+          "Jeevamrit",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "video_id": "MJ0uoV7lURs",
+      "title": "10 ACRE Multilayer Sustainable Food Forest Tour | फलो के जंगल की सैर  | Bhoomi Natural | Abhay Rod",
+      "location": "Main Farm (Shamli)",
+      "category": "Farm Tour",
+      "language": "hi",
+      "text_length": 53618,
+      "extracted": {
+        "crops": [
+          "Rice",
+          "Pineapple",
+          "Litchi",
+          "Guava",
+          "Mango",
+          "Chiku",
+          "Peach",
+          "Flowers",
+          "Pear",
+          "Turmeric",
+          "Papaya",
+          "Banana"
+        ],
+        "techniques": [
+          "Vermicompost",
+          "Grafting",
+          "Jeevamrit",
+          "Food Forest"
+        ],
+        "acreage_mentions": [
+          10.0,
+          10.0
+        ],
+        "timeline_mentions": [
+          3,
+          2,
+          2300,
+          300,
+          200,
+          10,
+          50,
+          7,
+          8,
+          8,
+          70,
+          120
+        ]
+      }
+    },
+    {
+      "video_id": "6ncpHq-ppbo",
+      "title": "No Tilling Food Forest Farm Tour | बिना जुताई का फलों जंगल घूमिए |",
+      "location": "Main Farm (Shamli)",
+      "category": "Farm Tour",
+      "language": "hi",
+      "text_length": 29105,
+      "extracted": {
+        "crops": [
+          "Litchi",
+          "Guava",
+          "Mango",
+          "Peach",
+          "Tuberose",
+          "Jackfruit",
+          "Flowers",
+          "Pear",
+          "Turmeric",
+          "Papaya",
+          "Banana"
+        ],
+        "techniques": [
+          "Food Forest",
+          "Multilayer"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          6,
+          15,
+          6,
+          3,
+          15,
+          10
+        ]
+      }
+    },
+    {
+      "video_id": "2iIMIY-fCAU",
+      "title": "Earthworm (केचूआ) works FREE in FOOD FOREST provide Nutrition & Water | किसान का सच्चा मित्र",
+      "location": "Main Farm (Shamli)",
+      "category": "Tutorial",
+      "language": "hi",
+      "text_length": 5379,
+      "extracted": {
+        "crops": [],
+        "techniques": [
+          "Vermicompost",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": []
+      }
+    },
+    {
+      "video_id": "u1TxZ25o1zo",
+      "title": "कैसे खाद और पानी बचाया ? LOW COST Natural fertilizer and irrigation techniques jeevamrit gokripamrit",
+      "location": "Main Farm (Shamli)",
+      "category": "Tutorial",
+      "language": "hi",
+      "text_length": 13045,
+      "extracted": {
+        "crops": [
+          "Litchi"
+        ],
+        "techniques": [
+          "Vermicompost",
+          "Jeevamrit",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": []
+      }
+    },
+    {
+      "video_id": "eLeLTZRAUW8",
+      "title": "Rajnigandha or Tuberose Flower Farming In Multilayer Food Forest । रजनीगंधा को फलो के जंगल में उगाया",
+      "location": "Main Farm (Shamli)",
+      "category": "General",
+      "language": "hi",
+      "text_length": 5621,
+      "extracted": {
+        "crops": [
+          "Litchi",
+          "Mango",
+          "Guava",
+          "Peach",
+          "Tuberose",
+          "Flowers",
+          "Turmeric",
+          "Banana"
+        ],
+        "techniques": [
+          "Food Forest",
+          "Multilayer"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": []
+      }
+    },
+    {
+      "video_id": "eZineGlZ7Q4",
+      "title": "आम की नई क़िस्म की खोज़ । Magic : How we grow new variety ? Food Forest🌳 Bhoomi Natural Farm | Abhay",
+      "location": "Main Farm (Shamli)",
+      "category": "General",
+      "language": "hi",
+      "text_length": 5119,
+      "extracted": {
+        "crops": [],
+        "techniques": [
+          "Grafting",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          8,
+          2,
+          15,
+          15,
+          8,
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "video_id": "uJmqCk1fC4c",
+      "title": "Why and how to pruning AVACADO Plant ? अवाकाडो की कटाई क्यों और कैसे करे ? Bhoomi Natural Foodforest",
+      "location": "Main Farm (Shamli)",
+      "category": "Tutorial",
+      "language": "hi",
+      "text_length": 8465,
+      "extracted": {
+        "crops": [
+          "Avocado",
+          "Papaya"
+        ],
+        "techniques": [
+          "Jeevamrit",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": []
+      }
+    },
+    {
+      "video_id": "FK8w5Sqj-0Y",
+      "title": "In 4 Months FRUITING start in FOOD FOREST | 4 महीने में ही पेड़ पर फल आने लगा | Bhoomi Natural Farm",
+      "location": "Main Farm (Shamli)",
+      "category": "General",
+      "language": "hi",
+      "text_length": 10709,
+      "extracted": {
+        "crops": [
+          "Guava",
+          "Chiku"
+        ],
+        "techniques": [
+          "Jeevamrit",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          4,
+          4,
+          6,
+          4,
+          4,
+          4,
+          4,
+          1,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "video_id": "SlDb256ENuM",
+      "title": "10 Acre FOOD FOREST Tour | फलों का जंगल घूमिये । Bhoomi Natural Farms | Bekeeping | Fruits | Flowers",
+      "location": "Main Farm (Shamli)",
+      "category": "Farm Tour",
+      "language": "hi",
+      "text_length": 40426,
+      "extracted": {
+        "crops": [
+          "Litchi",
+          "Guava",
+          "Mango",
+          "Peach",
+          "Tuberose",
+          "Jackfruit",
+          "Flowers",
+          "Pear",
+          "Turmeric",
+          "Papaya",
+          "Banana"
+        ],
+        "techniques": [
+          "Vermicompost",
+          "Grafting",
+          "Ghanjeevamrit",
+          "Jeevamrit",
+          "Food Forest",
+          "Multilayer"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          2,
+          4,
+          9,
+          2,
+          12,
+          15,
+          45,
+          70,
+          10,
+          15
+        ]
+      }
+    },
+    {
+      "video_id": "tTh-3_85sVk",
+      "title": "10 Month Food forest Growth | 10 महीने में फल लग गए | Bhoomi Natural | Abhay Rod",
+      "location": "Main Farm (Shamli)",
+      "category": "General",
+      "language": "hi",
+      "text_length": 9710,
+      "extracted": {
+        "crops": [
+          "Litchi",
+          "Mango",
+          "Guava",
+          "Chiku",
+          "Flowers",
+          "Pear",
+          "Turmeric"
+        ],
+        "techniques": [
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      }
+    },
+    {
+      "video_id": "jzvwDsn-H68",
+      "title": "Bhoomi Food Forest FRUITS Tour | फल ही फल लगे है  । NoTill Food Forest",
+      "location": "Main Farm (Shamli)",
+      "category": "Farm Tour",
+      "language": "hi",
+      "text_length": 28199,
+      "extracted": {
+        "crops": [
+          "Litchi",
+          "Mango",
+          "Chiku",
+          "Peach",
+          "Tuberose",
+          "Jackfruit",
+          "Flowers",
+          "Pear",
+          "Banana"
+        ],
+        "techniques": [
+          "Vermicompost",
+          "Grafting",
+          "Jeevamrit",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          20
+        ]
+      }
+    },
+    {
+      "video_id": "9puTDbfxf1k",
+      "title": "Gladiolus Flower Farming in Food Forest | ग्लेडियोलस फूल की खेती कैसे करे फ़ूड फारेस्ट में | bhoomi",
+      "location": "Main Farm (Shamli)",
+      "category": "General",
+      "language": "hi",
+      "text_length": 10588,
+      "extracted": {
+        "crops": [
+          "Litchi",
+          "Tuberose",
+          "Flowers",
+          "Gladiolus",
+          "Turmeric"
+        ],
+        "techniques": [
+          "Jeevamrit",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          45,
+          10,
+          15,
+          10,
+          15,
+          15,
+          1515
+        ]
+      }
+    },
+    {
+      "video_id": "mqo-_RxTBqg",
+      "title": "Why & How of COMPOSTING & PRUNING after Harvesting Fruit | GhanJivaamrit, Jivaamrit | Hindi | Bhoomi",
+      "location": "Main Farm (Shamli)",
+      "category": "Tutorial",
+      "language": "hi",
+      "text_length": 8357,
+      "extracted": {
+        "crops": [
+          "Litchi"
+        ],
+        "techniques": [
+          "Jeevamrit",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": []
+      }
+    },
+    {
+      "video_id": "NzCpAtIg090",
+      "title": "Farm Tour of Multilayer Sustainable Food Forest | फलो का जंगल देखिए। 35+Fruits,Turmeric । Abhay Rod",
+      "location": "Main Farm (Shamli)",
+      "category": "Farm Tour",
+      "language": "hi",
+      "text_length": 13488,
+      "extracted": {
+        "crops": [
+          "Rice",
+          "Litchi",
+          "Guava",
+          "Mango",
+          "Peach",
+          "Tuberose",
+          "Flowers",
+          "Gladiolus",
+          "Pear",
+          "Turmeric",
+          "Papaya",
+          "Banana"
+        ],
+        "techniques": [
+          "Vermicompost",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": [
+          10,
+          2
+        ]
+      }
+    },
+    {
+      "video_id": "q-r4b4rKOVY",
+      "title": "How we grow Victoria Queen : World's best Pineapple?अनानास की खेती और स्वास्थ्य लाभ Health Benefits",
+      "location": "Main Farm (Shamli)",
+      "category": "Harvest",
+      "language": "hi",
+      "text_length": 9793,
+      "extracted": {
+        "crops": [
+          "Litchi",
+          "Turmeric",
+          "Mango",
+          "Banana"
+        ],
+        "techniques": [
+          "Jeevamrit",
+          "Food Forest"
+        ],
+        "acreage_mentions": [],
+        "timeline_mentions": []
+      }
+    }
+  ]
+}

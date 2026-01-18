@@ -124,8 +124,8 @@
     }
 
     // Lazy loading for iframes (YouTube videos)
-    function lazyLoadIframes() {
-        const iframes = document.querySelectorAll('iframe[data-src]');
+    function lazyLoadIframes(scope = document) {
+        const iframes = scope.querySelectorAll('iframe[data-src]');
 
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
@@ -147,6 +147,159 @@
 
     // Initialize lazy loading
     lazyLoadIframes();
+
+    // ========================================
+    // Project Loading Logic
+    // ========================================
+    let locationsData = {};
+    const projectsSection = document.getElementById('projects');
+
+    async function loadProjectData() {
+        if (!projectsSection) return;
+
+        try {
+            console.log('Starting project data load...');
+            
+            // Simple fetch, exactly matching the working logic from root index.html
+            // expecting /website/refs/youtube/analysis/locations.json to exist
+            const response = await fetch('./refs/youtube/analysis/locations.json');
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            locationsData = await response.json();
+            console.log('Project data loaded:', Object.keys(locationsData));
+            
+            renderProjectTabs();
+        } catch (error) {
+            console.error('Error loading projects:', error);
+            const container = document.getElementById('location-tabs');
+            if (container) {
+                container.innerHTML = `
+                    <div style="color: #dc2626; padding: 1rem; text-align: center; width: 100%;">
+                        <p>Unable to load projects (${error.message}).</p>
+                        <p style="font-size: 0.8em; margin-top: 0.5rem;">Please check console for details.</p>
+                    </div>
+                `;
+            }
+        }
+    }
+
+    function renderProjectTabs() {
+        const container = document.getElementById('location-tabs');
+        if (!container) return;
+
+        const locations = Object.keys(locationsData);
+        
+        container.innerHTML = locations.map((loc, index) => {
+            // Create a safe ID for the tab
+            const safeId = loc.replace(/\s+/g, '-');
+            const isActive = index === 0 ? 'active' : '';
+            return `<button class="tab-btn ${isActive}" data-location="${loc}">${loc}</button>`;
+        }).join('');
+
+        // Add click listeners
+        const tabs = container.querySelectorAll('.tab-btn');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Deactivate all
+                tabs.forEach(t => t.classList.remove('active'));
+                // Activate clicked
+                this.classList.add('active');
+                // Render content
+                renderProjectContent(this.dataset.location);
+            });
+        });
+
+        // Render initial content
+        if (locations.length > 0) {
+            renderProjectContent(locations[0]);
+        }
+    }
+
+    function renderProjectContent(locationKey) {
+        const contentContainer = document.getElementById('location-content');
+        if (!contentContainer) return;
+
+        const data = locationsData[locationKey];
+        
+        // Fade out
+        contentContainer.classList.remove('loaded');
+
+            // Short timeout for fade effect
+        setTimeout(() => {
+            contentContainer.innerHTML = `
+                <div class="project-grid">
+                    <!-- Sidebar Info -->
+                    <div class="project-info">
+                        <h3>${locationKey}</h3>
+                        <p class="project-summary">${data.project_summary || 'No summary available.'}</p>
+                        
+                        <div class="tag-group">
+                            <h4>Key Techniques</h4>
+                            <div class="tags">
+                                ${(data.key_techniques || []).map(tech => 
+                                    `<span class="tag tech">${tech}</span>`
+                                ).join('') || '<span class="tag">Not specified</span>'}
+                            </div>
+                        </div>
+                        
+                        <div class="tag-group">
+                            <h4>Key Crops</h4>
+                            <div class="tags">
+                                ${(data.key_crops || []).map(crop => 
+                                    `<span class="tag crop">${crop}</span>`
+                                ).join('') || '<span class="tag">Not specified</span>'}
+                            </div>
+                        </div>
+
+                        <div class="project-stat">
+                            <span>Total Videos</span>
+                            <span class="stat-value">${data.video_count}</span>
+                        </div>
+                    </div>
+
+                    <!-- Video Grid -->
+                    <div class="project-videos">
+                        <h4>Project Videos</h4>
+                        <div class="video-list">
+                            ${(data.videos || []).map(video => `
+                                <div class="project-video-item">
+                                    <a href="https://www.youtube.com/watch?v=${video.id}" target="_blank" class="project-video-thumb">
+                                        <img src="https://img.youtube.com/vi/${video.id}/mqdefault.jpg" alt="${video.title}" loading="lazy">
+                                        <div class="play-overlay">
+                                            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                                                <path d="M8 5v14l11-7z"/>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="project-video-info">
+                                        <span class="project-video-category">${video.category || 'General'}</span>
+                                        <h5 class="project-video-title">
+                                            <a href="https://www.youtube.com/watch?v=${video.id}" target="_blank">${video.title}</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            // Fade in
+            contentContainer.classList.add('loaded');
+            
+            // Re-initialize icons for new content
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        }, 200);
+    }
+
+    // Trigger load when DOM is ready
+    loadProjectData();
+
 
     // Animate elements on scroll
     function animateOnScroll() {
