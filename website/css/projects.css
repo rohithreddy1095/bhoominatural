@@ -1,0 +1,261 @@
+/* ========================================
+   Projects Section
+======================================== */
+.projects {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-background);
+}
+
+.projects-tabs {
+    margin-bottom: var(--spacing-md);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabs-nav {
+    display: flex;
+    gap: var(--spacing-md);
+    overflow-x: auto;
+    padding-bottom: 2px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+}
+
+.tabs-nav::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+    padding: var(--spacing-sm) var(--spacing-xs);
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: all var(--transition-fast);
+}
+
+.tab-btn:hover {
+    color: var(--color-primary);
+}
+
+.tab-btn.active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+.project-content {
+    min-height: 400px;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.project-content.loaded {
+    opacity: 1;
+}
+
+/* Ensure content is visible even if JS fails to add 'loaded' class after a timeout */
+.project-content:not(.loaded) {
+    animation: fadeInFallback 0.5s forwards 2s; /* 2s delay fallback */
+}
+
+@keyframes fadeInFallback {
+    to { opacity: 1; }
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-lg);
+}
+
+/* Project Info Sidebar */
+.project-info {
+    background: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    height: fit-content;
+}
+
+.project-info h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+}
+
+.project-summary {
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.7;
+}
+
+.tag-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.tag-group h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-xs);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    font-size: 0.85rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: var(--color-background-alt);
+    color: var(--color-text);
+}
+
+.tag.tech {
+    background: #e8f5e9; /* Light Green */
+    color: #2e7d32;
+}
+
+.tag.crop {
+    background: #fff8e1; /* Light Amber */
+    color: #f57f17;
+}
+
+.project-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid #eee;
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+/* Project Video Grid */
+.project-videos h4 {
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-heading);
+    border-bottom: 1px solid #eee;
+    padding-bottom: var(--spacing-xs);
+}
+
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+}
+
+/* Responsive adjustments for Projects */
+@media (max-width: 992px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .video-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Project Video Items */
+.project-video-item {
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+.project-video-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.project-video-thumb {
+    display: block;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background-color: #e7e5e4;
+    overflow: hidden;
+}
+
+.project-video-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.project-video-item:hover .project-video-thumb img {
+    transform: scale(1.05);
+}
+
+.play-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.project-video-item:hover .play-overlay {
+    opacity: 1;
+}
+
+.play-overlay svg {
+    width: 48px;
+    height: 48px;
+    color: white;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.project-video-info {
+    padding: var(--spacing-sm);
+}
+
+.project-video-category {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #78716c;
+    background-color: #f5f5f4;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.project-video-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.project-video-title a {
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--transition-fast);
+}
+
+.project-video-title a:hover {
+    color: var(--color-primary);
+}

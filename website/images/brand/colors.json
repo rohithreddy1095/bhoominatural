@@ -1,0 +1,62 @@
+{
+  "earth_brown": {
+    "name": "Earth Brown",
+    "hex": "#623C16",
+    "rgb": [
+      98,
+      60,
+      22
+    ],
+    "usage": "Bhoomi text, hands symbol"
+  },
+  "forest_green": {
+    "name": "Forest Green",
+    "hex": "#1E6F48",
+    "rgb": [
+      30,
+      111,
+      72
+    ],
+    "usage": "Outer arc, accents"
+  },
+  "spring_green": {
+    "name": "Spring Green",
+    "hex": "#B1D08C",
+    "rgb": [
+      177,
+      208,
+      140
+    ],
+    "usage": "Inner arc highlight"
+  },
+  "leaf_green": {
+    "name": "Leaf Green",
+    "hex": "#7CAD41",
+    "rgb": [
+      124,
+      173,
+      65
+    ],
+    "usage": "Tree leaves"
+  },
+  "bhoomi_brown": {
+    "name": "Bhoomi Brown",
+    "hex": "#603C16",
+    "rgb": [
+      96,
+      60,
+      22
+    ],
+    "usage": "Bhoomi text"
+  },
+  "natural_green": {
+    "name": "Natural Green",
+    "hex": "#7EC032",
+    "rgb": [
+      126,
+      192,
+      50
+    ],
+    "usage": "Natural text with underline"
+  }
+}
