@@ -303,7 +303,7 @@
 
     // Animate elements on scroll
     function animateOnScroll() {
-        const elements = document.querySelectorAll('.service-card, .stat-item, .video-card, .gallery-item');
+        const elements = document.querySelectorAll('.service-card, .stat-item, .video-card, .gallery-item, .product-card');
 
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
@@ -325,14 +325,17 @@
     // Add animation styles dynamically
     const style = document.createElement('style');
     style.textContent = `
-        .service-card, .stat-item, .video-card, .gallery-item {
+        .service-card, .stat-item, .video-card, .gallery-item, .product-card {
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.6s ease, transform 0.6s ease;
         }
-        .service-card.animate-in, .stat-item.animate-in, .video-card.animate-in, .gallery-item.animate-in {
+        .service-card.animate-in, .stat-item.animate-in, .video-card.animate-in, .gallery-item.animate-in, .product-card.animate-in {
             opacity: 1;
             transform: translateY(0);
+        }
+        .product-card.hidden {
+            display: none;
         }
         .navbar.scrolled {
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
@@ -357,6 +360,45 @@
 
     // Initialize animations
     animateOnScroll();
+
+    // ========================================
+    // Products Tab Filtering
+    // ========================================
+    const productTabs = document.querySelectorAll('.products-tabs .tab-btn');
+    const productCards = document.querySelectorAll('.product-card');
+
+    if (productTabs.length > 0 && productCards.length > 0) {
+        productTabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                productTabs.forEach(function(t) {
+                    t.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                // Filter products
+                const category = this.dataset.category;
+
+                productCards.forEach(function(card) {
+                    const cardCategory = card.dataset.category;
+                    if (category === 'all' || cardCategory === category) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Show all products initially (fruits are shown by default)
+        // First tab (Fruits) is already active, filter to fruits
+        productCards.forEach(function(card) {
+            const cardCategory = card.dataset.category;
+            if (cardCategory !== 'fruits') {
+                card.classList.add('hidden');
+            }
+        });
+    }
 
     // Console welcome message
     console.log('%c Bhoomi Natural ', 'background: #4a7c59; color: white; font-size: 20px; padding: 10px;');

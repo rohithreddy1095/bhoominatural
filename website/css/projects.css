@@ -24,13 +24,13 @@
     display: none; /* Chrome/Safari */
 }
 
-.tab-btn {
+.projects-tabs .tab-btn {
     background: none;
     border: none;
     font-family: var(--font-primary);
     font-size: 1rem;
-    font-weight: 500;
-    color: var(--color-text-light);
+    font-weight: 600;
+    color: var(--color-text);
     padding: var(--spacing-sm) var(--spacing-xs);
     cursor: pointer;
     white-space: nowrap;
@@ -38,11 +38,11 @@
     transition: all var(--transition-fast);
 }
 
-.tab-btn:hover {
+.projects-tabs .tab-btn:hover {
     color: var(--color-primary);
 }
 
-.tab-btn.active {
+.projects-tabs .tab-btn.active {
     color: var(--color-primary);
     border-bottom-color: var(--color-primary);
 }
