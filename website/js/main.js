@@ -6,6 +6,42 @@
 (function() {
     'use strict';
 
+    // Constants
+    var NAVBAR_SCROLL_THRESHOLD = 50;
+    var SCROLL_OFFSET = 100;
+    var WHATSAPP_NUMBER = '917500312013';
+    var FADE_TIMEOUT_MS = 300;
+
+    // Utilities
+    function throttle(fn, wait) {
+        var last = 0;
+        return function() {
+            var now = Date.now();
+            if (now - last >= wait) {
+                last = now;
+                fn.apply(this, arguments);
+            }
+        };
+    }
+
+    function showToast(message, type) {
+        var toast = document.createElement('div');
+        toast.className = 'toast ' + (type || 'success');
+        toast.setAttribute('role', 'status');
+        toast.setAttribute('aria-live', 'polite');
+        toast.textContent = message;
+        document.body.appendChild(toast);
+        // Trigger reflow then show
+        toast.offsetHeight;
+        toast.classList.add('visible');
+        setTimeout(function() {
+            toast.classList.remove('visible');
+            setTimeout(function() { toast.remove(); }, FADE_TIMEOUT_MS);
+        }, 4000);
+    }
+
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
     // DOM Elements
     const navbar = document.querySelector('.navbar');
     const navToggle = document.querySelector('.nav-toggle');
@@ -17,6 +53,8 @@
         navToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
+            var expanded = navMenu.classList.contains('active');
+            navToggle.setAttribute('aria-expanded', String(expanded));
         });
 
         // Close menu when clicking a link
@@ -24,6 +62,7 @@
             link.addEventListener('click', function() {
                 navMenu.classList.remove('active');
                 navToggle.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
             });
         });
 
@@ -32,20 +71,19 @@
             if (!navbar.contains(event.target)) {
                 navMenu.classList.remove('active');
                 navToggle.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
             }
         });
     }
 
     // Navbar scroll effect
     function handleNavbarScroll() {
-        if (window.scrollY > 50) {
+        if (window.scrollY > NAVBAR_SCROLL_THRESHOLD) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
     }
-
-    window.addEventListener('scroll', handleNavbarScroll);
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
@@ -60,7 +98,7 @@
 
                 window.scrollTo({
                     top: targetPosition,
-                    behavior: 'smooth'
+                    behavior: prefersReducedMotion.matches ? 'auto' : 'smooth'
                 });
             }
         });
@@ -69,7 +107,7 @@
     // Active navigation highlight on scroll
     function highlightNavOnScroll() {
         const sections = document.querySelectorAll('section[id]');
-        const scrollPosition = window.scrollY + navbar.offsetHeight + 100;
+        const scrollPosition = window.scrollY + navbar.offsetHeight + SCROLL_OFFSET;
 
         sections.forEach(function(section) {
             const sectionTop = section.offsetTop;
@@ -81,14 +119,20 @@
                 if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                     navLinks.forEach(function(link) {
                         link.classList.remove('active');
+                        link.removeAttribute('aria-current');
                     });
                     navLink.classList.add('active');
+                    navLink.setAttribute('aria-current', 'true');
                 }
             }
         });
     }
 
-    window.addEventListener('scroll', highlightNavOnScroll);
+    // Throttled combined scroll handler
+    window.addEventListener('scroll', throttle(function() {
+        handleNavbarScroll();
+        highlightNavOnScroll();
+    }, 100));
 
     // Form submission handler
     const contactForm = document.querySelector('.contact-form');
@@ -105,18 +149,15 @@
 
             // Create WhatsApp message
             const whatsappMessage = encodeURIComponent(
-                'Hello! I am ' + name + '.\n\n' +
-                'Email: ' + email + '\n' +
-                (phone ? 'Phone: ' + phone + '\n\n' : '\n') +
-                'Message: ' + message
+                `Hello! I am ${name}.\n\nEmail: ${email}\n${phone ? 'Phone: ' + phone + '\n\n' : '\n'}Message: ${message}`
             );
 
             // Open WhatsApp with pre-filled message
-            const whatsappUrl = 'https://wa.me/917500312013?text=' + whatsappMessage;
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
             window.open(whatsappUrl, '_blank');
 
             // Show success message
-            alert('Redirecting to WhatsApp to send your message. Thank you for contacting Bhoomi Natural!');
+            showToast('Redirecting to WhatsApp. Thank you for contacting Bhoomi Natural!', 'success');
 
             // Reset form
             contactForm.reset();
@@ -158,8 +199,6 @@
         if (!projectsSection) return;
 
         try {
-            console.log('Starting project data load...');
-            
             // Simple fetch, exactly matching the working logic from root index.html
             // expecting /website/refs/youtube/analysis/locations.json to exist
             const response = await fetch('./refs/youtube/analysis/locations.json');
@@ -169,8 +208,6 @@
             }
             
             locationsData = await response.json();
-            console.log('Project data loaded:', Object.keys(locationsData));
-            
             renderProjectTabs();
         } catch (error) {
             console.error('Error loading projects:', error);
@@ -194,7 +231,7 @@
         
         container.innerHTML = locations.map((loc, index) => {
             // Create a safe ID for the tab
-            const safeId = loc.replace(/\s+/g, '-');
+            const safeId = loc.replace(/[^a-zA-Z0-9]+/g, '-');
             const isActive = index === 0 ? 'active' : '';
             return `<button class="tab-btn ${isActive}" data-location="${loc}">${loc}</button>`;
         }).join('');
@@ -294,7 +331,7 @@
             if (typeof lucide !== 'undefined') {
                 lucide.createIcons();
             }
-        }, 200);
+        }, FADE_TIMEOUT_MS);
     }
 
     // Trigger load when DOM is ready
@@ -322,42 +359,6 @@
         });
     }
 
-    // Add animation styles dynamically
-    const style = document.createElement('style');
-    style.textContent = `
-        .service-card, .stat-item, .video-card, .gallery-item, .product-card {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        .service-card.animate-in, .stat-item.animate-in, .video-card.animate-in, .gallery-item.animate-in, .product-card.animate-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .product-card.hidden {
-            display: none;
-        }
-        .navbar.scrolled {
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-        }
-        .nav-menu a.active {
-            color: #4a7c59;
-        }
-        .nav-menu a.active::after {
-            width: 100%;
-        }
-        .nav-toggle.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-        .nav-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-        .nav-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -5px);
-        }
-    `;
-    document.head.appendChild(style);
-
     // Initialize animations
     animateOnScroll();
 
@@ -373,8 +374,10 @@
                 // Update active tab
                 productTabs.forEach(function(t) {
                     t.classList.remove('active');
+                    t.setAttribute('aria-selected', 'false');
                 });
                 this.classList.add('active');
+                this.setAttribute('aria-selected', 'true');
 
                 // Filter products
                 const category = this.dataset.category;
