@@ -199,9 +199,7 @@
         if (!projectsSection) return;
 
         try {
-            // Simple fetch, exactly matching the working logic from root index.html
-            // expecting /website/refs/youtube/analysis/locations.json to exist
-            const response = await fetch('./refs/youtube/analysis/locations.json');
+            const response = await fetch('./data/locations.json');
             
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
