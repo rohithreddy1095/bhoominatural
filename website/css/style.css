@@ -283,8 +283,8 @@ h4 { font-size: 1.25rem; }
     text-align: center;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     background-image: url('https://img.youtube.com/vi/MJ0uoV7lURs/maxresdefault.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: 200%;
+    background-position: 60% 45%;
     background-attachment: fixed;
 }
 
