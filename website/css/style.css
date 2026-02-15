@@ -944,6 +944,295 @@ h4 { font-size: 1.25rem; }
 }
 
 /* ========================================
+   Our Process Section
+======================================== */
+.process {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-background);
+    overflow: hidden;
+}
+
+/* --- Process Timeline --- */
+.process-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-xl);
+    padding: var(--spacing-md) 0;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(
+        to bottom,
+        var(--bhoomi-spring-green),
+        var(--bhoomi-natural-green),
+        var(--bhoomi-forest-green)
+    );
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.process-step {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.process-step.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.process-step:last-child {
+    margin-bottom: 0;
+}
+
+/* Alternating layout */
+.process-step:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.process-step:nth-child(even) {
+    flex-direction: row;
+    text-align: left;
+}
+
+.step-number {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    z-index: 2;
+    box-shadow: 0 0 0 4px var(--color-background), var(--shadow-sm);
+}
+
+.step-content {
+    width: calc(50% - 40px);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+.step-content:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.step-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.process-step:nth-child(odd) .step-icon {
+    margin-left: auto;
+}
+
+.step-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.step-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--color-text);
+    margin-bottom: 0.25rem;
+}
+
+.step-content p {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+/* --- Food Forest Layers Diagram --- */
+.forest-layers {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-xl);
+    text-align: center;
+}
+
+.forest-layers-title {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    color: var(--color-text);
+    margin-bottom: 0.25rem;
+}
+
+.forest-layers-subtitle {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+}
+
+.layers-diagram {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.layer {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    text-align: left;
+    transition: transform var(--transition-fast);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.layer:last-child {
+    border-bottom: none;
+}
+
+.layer:hover {
+    transform: scale(1.01);
+}
+
+.layer-canopy {
+    background: linear-gradient(135deg, #1a5c32 0%, #237a42 100%);
+    color: var(--color-white);
+    min-height: 72px;
+}
+
+.layer-subcanopy {
+    background: linear-gradient(135deg, #2d8a4e 0%, #3ea864 100%);
+    color: var(--color-white);
+    min-height: 64px;
+}
+
+.layer-shrub {
+    background: linear-gradient(135deg, #5bb86a 0%, #7EC032 100%);
+    color: var(--color-white);
+    min-height: 56px;
+}
+
+.layer-ground {
+    background: linear-gradient(135deg, #8aba4a 0%, #a8c96a 100%);
+    color: #1a3a0a;
+    min-height: 48px;
+}
+
+.layer-soil {
+    background: linear-gradient(135deg, #7a5c3a 0%, #623C16 100%);
+    color: var(--color-white);
+    min-height: 56px;
+}
+
+.layer-height {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    opacity: 0.85;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.layer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.layer-name {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+}
+
+.layer-crops {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    font-weight: 600;
+}
+
+.layer-desc {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    text-align: right;
+}
+
+/* --- Climate & Terrain Advantage --- */
+.climate-advantage {
+    text-align: center;
+}
+
+.climate-title {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+.climate-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+}
+
+.climate-card {
+    background: var(--color-white);
+    padding: var(--spacing-md) var(--spacing-sm);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    border-top: 3px solid var(--color-primary);
+}
+
+.climate-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.climate-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.climate-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.climate-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+}
+
+.climate-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+}
+
+/* ========================================
    Animation & Interactive States (moved from JS)
 ======================================== */
 .service-card, .stat-item, .video-card, .gallery-item, .product-card {
@@ -1054,6 +1343,10 @@ h4 { font-size: 1.25rem; }
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .climate-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .products-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -1075,6 +1368,12 @@ h4 { font-size: 1.25rem; }
 @media (max-width: 768px) {
     .hero {
         background-attachment: scroll;
+        background-size: 600%;
+        background-position: 62% 42%;
+    }
+
+    .hero-overlay {
+        background: rgba(35, 70, 45, 0.92);
     }
 
     .nav-toggle {
@@ -1121,6 +1420,49 @@ h4 { font-size: 1.25rem; }
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Process timeline mobile */
+    .timeline-line {
+        left: 20px;
+    }
+
+    .process-step,
+    .process-step:nth-child(odd),
+    .process-step:nth-child(even) {
+        flex-direction: row;
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .step-number {
+        left: 20px;
+        transform: translateX(-50%);
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+
+    .step-content {
+        width: 100%;
+    }
+
+    .process-step:nth-child(odd) .step-icon {
+        margin-left: 0;
+    }
+
+    .climate-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .layer {
+        grid-template-columns: 60px 1fr;
+        gap: var(--spacing-xs);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .layer-desc {
+        display: none;
     }
 
     .products-tabs {
@@ -1190,6 +1532,10 @@ h4 { font-size: 1.25rem; }
         grid-template-columns: 1fr;
     }
 
+    .climate-grid {
+        grid-template-columns: 1fr;
+    }
+
     .products-tabs {
         flex-direction: column;
         align-items: stretch;
@@ -1234,7 +1580,7 @@ h4 { font-size: 1.25rem; }
         scroll-behavior: auto;
     }
 
-    .service-card, .stat-item, .video-card, .gallery-item, .product-card {
+    .service-card, .stat-item, .video-card, .gallery-item, .product-card, .process-step {
         opacity: 1;
         transform: none;
     }

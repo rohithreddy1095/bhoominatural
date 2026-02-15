@@ -338,7 +338,7 @@
 
     // Animate elements on scroll
     function animateOnScroll() {
-        const elements = document.querySelectorAll('.service-card, .stat-item, .video-card, .gallery-item, .product-card');
+        const elements = document.querySelectorAll('.service-card, .stat-item, .video-card, .gallery-item, .product-card, .process-step');
 
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
